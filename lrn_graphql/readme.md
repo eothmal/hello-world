@@ -9,6 +9,22 @@ update package.json :
   },
 >npm run devStart
 
+  "express-graphql": "^0.12.0",
+  to
+ "express-graphql": "^0.7.1",
+
+REQUEST:
+{
+  message
+}
+
+RESPONSE:
+{
+  "data": {
+    "message": "Hello World"
+  }
+}
+
 server.js
 const express = require('express')
 const expressGraphQL = require('express-graphql')
