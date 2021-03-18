@@ -20,7 +20,7 @@ const schema = new GraphQLSchema({
 })
 
 //app.use('/graphql', expressGraphQL({
-app.use('/graphql', expressGraphQL({
+app.use('/', expressGraphQL({
   schema: schema,
   graphiql: true
 }))
