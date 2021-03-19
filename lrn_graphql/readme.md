@@ -1,18 +1,19 @@
->npm init (once time, just enter accep default)  
->npm i express express-graphql graphql  
-update package.json :  
- "main": "server.js",  
->npm install --save-dev nodemon  
-update package.json :  
- "scripts": {
-    "devStart": "nodemon server.js"
-  },  
->npm run devStart  
+STEPS:  
+1. >npm init (once time, just enter accep default)  
+2. >npm i express express-graphql graphql  
+4.  "main": "server.js",  
+5. >npm install --save-dev nodemon  
+6. update package.json :  
+   "scripts": {
+      "devStart": "nodemon server.js"
+    },  
+7.  >npm run devStart  
 
-  "express-graphql": "^0.12.0",  
-  to  
- "express-graphql": "^0.7.1",  
-  
+    "express-graphql": "^0.12.0",  
+    to  
+    "express-graphql": "^0.7.1",  
+
+Examples:   
 REQUEST:  
 {
   message
@@ -53,25 +54,24 @@ app.use('/graphql', expressGraphQL({
 }))  
 app.listen(5000, () => console.log('Server Running'))  
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-package.json
-{
-  "name": "current-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "devStart": "nodemon server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4",
-    "express-graphql": "^0.7.1",
-    "graphql": "^14.1.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  }
-}
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+package.json  
+{  
+  "name": "current-project",  
+  "version": "1.0.0",  
+  "description": "",  
+  "main": "server.js",  
+  "scripts": {  
+    "devStart": "nodemon server.js"  
+  },  
+  "author": "",  
+  "license": "ISC",  
+  "dependencies": {  
+    "express": "^4.16.4",  
+    "express-graphql": "^0.7.1",  
+    "graphql": "^14.1.1"  
+  },  
+  "devDependencies": {  
+    "nodemon": "^1.19.4"  
+  }  
+}  
