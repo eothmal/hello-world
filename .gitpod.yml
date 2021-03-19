@@ -1,4 +1,4 @@
 tasks:
-  - command: cd lrn_graphql && \
+  - command: cd hello-world/lrn_graphql && \
              npm i express express-graphql graphql && \
              npm run devStart
