@@ -1,3 +1,3 @@
 tasks:
   - init: cd lrn_graphql && pm i express express-graphql graphql
-    command: lrn_graphql && npm run devStart
+    command: cd  lrn_graphql && npm run devStart
